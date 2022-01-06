@@ -1,0 +1,27 @@
+type: PowerTurret
+name: "Basic Turret"
+description: "The first turret. Can attack all units"
+targetAir: true
+targetGround: true
+health: 350
+size: 2
+reloadTime: 12
+inaccuracy: 0
+powerUse: 0.035
+range: 185
+shootType:{
+type: BasicBulletType
+Color: "#454500"
+speed: 7
+lifetime: 26.428571428
+damage: 6
+ammoMultiplier: 1
+reloadMultiplier: 1
+bulletWidth: 9
+bulletHeight: 12
+}
+category: turret
+research: duo
+requirements: [
+towerpoint/60
+]

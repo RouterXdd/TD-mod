@@ -1,0 +1,7 @@
+displayName:"TD mod"
+name:"td"
+description:"Mod for TD maps"
+author:"RouterXdd"
+version:"1.0"
+dependencies:[]
+minGameVersion:135

@@ -1,0 +1,31 @@
+type: PowerTurret
+name: "Artillery Turret"
+description: "The second turret. Can attack only ground units"
+targetAir: false
+targetGround: true
+health: 550
+size: 2
+reloadTime: 80
+inaccuracy: 0
+powerUse: 0.07
+range: 345
+shootType:{
+type: ArtilleryBulletType
+Color: "#454500"
+speed: 5
+lifetime: 185
+trailMult: 1.0
+trailMult: 2.0
+damage: 10
+ammoMultiplier: 1
+reloadMultiplier: 1
+splashDamageRadius: 30
+splashDamage: 30
+bulletWidth: 35
+bulletHeight: 35
+}
+category: turret
+research: basic-turret
+requirements: [
+towerpoint/140
+]

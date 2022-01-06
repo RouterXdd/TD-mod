@@ -1,0 +1,7 @@
+name: "Unit point"
+description: "Need to create units"
+color: "#00b2b2"
+radioactivity: 0.2
+explosiveness:0.0
+flammability:0.0
+hardness: 2

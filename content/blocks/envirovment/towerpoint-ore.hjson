@@ -1,0 +1,5 @@
+type:OreBlock
+name:"Tower Point"
+itemDrop:towerpoint
+oreDefault:true
+variants:2

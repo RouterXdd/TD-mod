@@ -1,0 +1,15 @@
+{
+	"type": "SolarGenerator",
+	"size": 2,
+  "name": "Solar Tower",
+  "description": "Generate energy for turrets",
+	"hasPower": true,
+	"powerProduction": 0.16,
+	"requirements": [
+		{ "item": "towerpoint", "amount": 10 }
+		
+	],
+	"category": "power",
+	"research": "solar-panel"
+    
+}
