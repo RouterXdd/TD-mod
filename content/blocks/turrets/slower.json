@@ -38,14 +38,7 @@
     "shootEffect": "none",
     "smokeEffect": "none",
     "incendChance": 0,
-    "status": {
-      "localizedName": "Slowering",
-      "name": "slowest",
-      "description": "Slow the enemies",
-      "effect": "lancerLaserCharge",
-      "speedMultiplier": 0.70,
-      "reloadMultiplier": 0.70
-    }
+    "status": "slow"
 },
 "requirements": [
   		{ "item": "towerpoint", "amount": 275 }
