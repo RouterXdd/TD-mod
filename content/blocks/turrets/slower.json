@@ -2,21 +2,26 @@
 "localizedName": "Slower",
 "description": "Shoot the wave of slow. Attack all units. Dont have damage",
 "type": "powerTurret",
-"reloadTime": 230,
-"recoilAmount": 0,
+"reload": 230,
+"recoil": 0,
 "rotateSpeed": 0,
 "shootCone": 360,
 "range": 150,
-"shootLength": 0,
 "heatColor": "bbdefb",
 "cooldown": 0.030,
 "size": 2,
-"shots": 360,
-"spread": 1,
+"consumes":{
+    "power": 0.03
+    },
+    "shoot":{
+        "type": "ShootSpread",
+        "shots": 360,
+        "firstShotDelay": 0,
+        "spread": 1
+    },
 "inaccuracy": 0,
 "targetAir": false,
 "targetGround": true,
-    "powerUse": 0.02,
     "hasPower": true,
     "shootType": {
     "sprite": "td-wave",

@@ -1,0 +1,56 @@
+{
+    "name": "Flame Crawler",
+    "research": {
+    "parent": "crawlerele",
+    "requirements": [
+    "unitpoint/100",
+    "silicon/200"
+    ]
+    },
+    "controller": "SuicideAI",
+    "description": "[red]A slow small unit that will explode when near any structures or unit. Can't damaged from freeze",
+    "type": "mech",
+    "mechSideSway": 0.25,
+    "armor": 2,
+    "speed": 0.6,
+    "hitSize": 12,
+    "flying": false,
+    "health": 360,
+    "range": 30,
+    "immunities": [
+            "freezing",
+        "melting"
+            ],
+    "weapons": [
+      {
+      "name": "boom",
+        "reload": 24,
+        "shootCone": 180,
+        "ejectEffect": "none",
+        "shootSound": "explosion",
+        "bullet": {
+        "type": "BombBulletType",
+        "hitEffect": "pulverize",
+        "lifetime": 10,
+        "speed": 1,
+        "splashDamageRadius": 45,
+        "instantDisappear": true,
+        "splashDamage": 150,
+        "killShooter": true,
+        "hittable": false,
+        "collidesAir": true,
+        "fragBullets": 6,
+"fragCone": 360,
+"hitSound": "laser",
+"fragBullet": {
+"type": "LaserBulletType",
+"length": 30,
+"colors": ["a80000", "a80000", "FFFFFF"],
+"damage": 30
+}
+         }
+      }
+    ]
+}
+    
+    

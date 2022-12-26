@@ -5,9 +5,11 @@ targetAir: true
 targetGround: false
 health: 450
 size: 2
-reloadTime: 120
+reload: 120
 inaccuracy: 0
-powerUse: 0.1
+consumes:{
+    power: 0.025
+}
 range: 345
 shootType:{
 type: BasicBulletType
@@ -23,8 +25,9 @@ homingRange: 30
 damage: 50
 ammoMultiplier: 1
 reloadMultiplier: 1
-bulletWidth: 35
-bulletHeight: 35
+width: 9
+height: 9
+collidesGround: false
 }
 category: turret
 research: basic-turret

@@ -15,7 +15,21 @@ plans: [
     ]
     time: 1675
   }
-{
+  {
+    unit: flamecrawler
+    requirements: [
+      unitpoint/8
+    ]
+    time: 1675
+  }
+   {
+    unit: icecrawler
+    requirements: [
+      unitpoint/8
+    ]
+    time: 1675
+  }
+  {
     unit: crawler
     requirements: [
       unitpoint/2

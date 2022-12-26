@@ -1,0 +1,74 @@
+type: PowerTurret
+name: "Fire Cannon"
+description: "The strong turret against flamecrawler. Can attack only ground units"
+targetAir: false
+targetGround: true
+health: 350
+size: 2
+reload: 170
+inaccuracy: 0
+consumes:{
+    power: 0.04
+    },
+    shoot:{
+        firstShotDelay: 56.66,
+    },
+range: 240
+shootType:{
+type: BasicBulletType
+sprite: circle-bullet
+backColor: "#a70000"
+frontColor: "#f90000"
+speed: 5
+lifetime: 48
+damage: 60
+status: burning
+ammoMultiplier: 1
+reloadMultiplier: 1
+width: 9
+height: 9
+cllidesAir: false
+}
+chargeSound: lasercharge
+chargeEffects : 1
+chargeTime: 56.66
+chargeEffect:{
+    type: MultiEffect
+    effects: [
+        {
+     type: ParticleEffect
+        lifetime: 50
+        particles: 1
+        length: 0
+        sizeFrom: 0
+        sizeTo: 4
+        colorFrom: a70000
+        colorTo: f90000
+        }
+        {
+            type: WaveEffect
+    lifetime: 50
+        sizeFrom: 10
+        sizeTo: 0
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: a70000
+        colorTo: f90000
+        }
+    ]
+}
+shootEffect:{
+    type: WaveEffect
+    lifetime: 100
+        sizeFrom: 0
+        sizeTo: 10
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 830000
+        colorTo: 830000
+}
+category: turret
+research: artillery-turret
+requirements: [
+towerpoint/270
+]

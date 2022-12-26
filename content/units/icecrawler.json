@@ -1,0 +1,47 @@
+{
+    "name": "Ice Crawler",
+    "research": {
+    "parent": "flamecrawler",
+    "requirements": [
+    "unitpoint/160",
+    "silicon/300"
+    ]
+    },
+    "controller": "SuicideAI",
+    "description": "[cyan]A very fast small unit that will explode when near any structures or unit. Can't be freezed or slowed",
+    "type": "mech",
+    "mechSideSway": 0.25,
+    "armor": 2,
+    "speed": 2,
+    "hitSize": 12,
+    "flying": false,
+    "health": 180,
+    "range": 30,
+    "immunities": [
+            "freezing",
+            "wet",
+            "slow"
+            ],
+    "weapons": [
+      {
+      "name": "boom",
+        "reload": 24,
+        "shootCone": 180,
+        "ejectEffect": "none",
+        "shootSound": "explosion",
+        "bullet": {
+        "type": "BombBulletType",
+        "hitEffect": "pulverize",
+        "lifetime": 10,
+        "speed": 1,
+        "splashDamageRadius": 60,
+        "instantDisappear": true,
+        "splashDamage": 120,
+        "status": "freezing",
+        "killShooter": true,
+        "hittable": false,
+        "collidesAir": true
+         }
+      }
+    ]
+}
