@@ -3,8 +3,7 @@
     "research": {
     "parent": "crawlerele",
     "requirements": [
-    "unitpoint/100",
-    "silicon/200"
+    "unitpoint/320"
     ]
     },
     "controller": "SuicideAI",
@@ -40,6 +39,7 @@
         "hittable": false,
         "collidesAir": true,
         "fragBullets": 6,
+        "shootOnDeath": true,
 "fragCone": 360,
 "hitSound": "laser",
 "fragBullet": {

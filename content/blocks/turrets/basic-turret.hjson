@@ -19,11 +19,21 @@ lifetime: 26.428571428
 damage: 6
 ammoMultiplier: 1
 reloadMultiplier: 1
-bulletWidth: 9
-bulletHeight: 12
+width: 8
+height: 11
 }
+drawer: {
+    type: DrawTurret
+    basePrefix: "defence-"
+    }
+alwaysUnlocked: true
 category: turret
-research: duo
+research: {
+    root: true
+    name: "Tower Defence"
+    requiresUnlock: false
+    planet: simulation
+}
 requirements: [
 towerpoint/60
 ]

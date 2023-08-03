@@ -1,0 +1,6 @@
+sector: 8
+planet: simulation
+difficulty: 1
+captureWave: 10
+alwaysUnlocked: true
+research: basic-turret

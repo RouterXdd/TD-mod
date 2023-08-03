@@ -1,5 +1,4 @@
 {
-    "localizedName": "Blast",
     "description": "Shoot the wave. Attack all units",
     "type": "powerTurret",
     "reload": 100,
@@ -36,7 +35,7 @@
         "lifetime": 22.5,
         "knockback": 0,
         "ammoMultiplier": 4,
-        "damage": 3,
+        "damage": 1,
         "frontColor": "bbbbbb",
         "backColor": "909090",
         "hitEffect": "lancerLaserCharge",
@@ -45,11 +44,23 @@
         "smokeEffect": "none",
         "incendChance": 0
     },
+    "drawer": {
+        "type": "DrawTurret",
+        "basePrefix": "defence-"
+        },
     "requirements": [
               { "item": "towerpoint", "amount": 180 }
     ],
     "category": "turret",
-    "research": "slower",
+    "research": {
+        "parent": "slower",
+        "objectives": [
+            {
+              "type": "SectorComplete",
+              "preset": "air-danger"
+            }
+          ]
+        },
     "shootSound": "laser"
     }
     

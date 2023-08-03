@@ -1,5 +1,4 @@
 {
-"localizedName": "Slower",
 "description": "Shoot the wave of slow. Attack all units. Dont have damage",
 "type": "powerTurret",
 "reload": 230,
@@ -11,7 +10,7 @@
 "cooldown": 0.030,
 "size": 2,
 "consumes":{
-    "power": 0.03
+    "power": 0.04
     },
     "shoot":{
         "type": "ShootSpread",
@@ -45,10 +44,22 @@
     "incendChance": 0,
     "status": "slow"
 },
+"drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "defence-"
+    },
 "requirements": [
   		{ "item": "towerpoint", "amount": 275 }
 ],
 "category": "turret",
-"research": "artillery-turret",
+"research": {
+    "parent": "artillery-turret",
+    "objectives": [
+        {
+          "type": "SectorComplete",
+          "preset": "double-trouble"
+        }
+      ]
+    },
 "shootSound": "laser"
 }

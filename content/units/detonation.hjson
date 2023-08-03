@@ -1,0 +1,41 @@
+{
+    name: Detonation
+    research: {
+    parent: flamecrawler
+    requirements: [
+    unitpoint/1200
+    ]
+    }
+    controller: SuicideAI
+    description: Tier 2 version of crawler
+    type: mech
+    mechSideSway: 0.22
+    armor: 3
+    speed: 2.1
+    hitSize: 17
+    flying: false
+    health: 480
+    range: 32
+    weapons: [
+      {
+      name: boom
+        reload: 24
+        shootCone: 180
+        ejectEffect: none
+        shootSound: explosion
+        bullet: {
+        type: BombBulletType
+        hitEffect: pulverize
+        lifetime: 10
+        speed: 1
+        splashDamage: 110
+        splashDamageRadius: 70
+        instantDisappear: true
+        shootOnDeath: true
+        killShooter: true
+        hittable: false
+        collidesAir: true
+         }
+      }
+    ]
+}

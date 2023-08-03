@@ -1,0 +1,13 @@
+sector: 23
+planet: simulation
+difficulty: 7
+captureWave: 45
+research: {
+parent: air-danger
+objectives: [
+    {
+      type: SectorComplete
+      preset: air-danger
+    }
+  ]
+}

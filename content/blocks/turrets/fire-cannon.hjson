@@ -8,7 +8,7 @@ size: 2
 reload: 170
 inaccuracy: 0
 consumes:{
-    power: 0.04
+    power: 0.08
     },
     shoot:{
         firstShotDelay: 56.66,
@@ -67,8 +67,20 @@ shootEffect:{
         colorFrom: 830000
         colorTo: 830000
 }
+drawer: {
+    type: DrawTurret
+    basePrefix: "defence-"
+    }
 category: turret
-research: artillery-turret
+research: {
+parent: artillery-turret
+objectives: [
+    {
+      type: SectorComplete
+      preset: air-danger
+    }
+  ]
+}
 requirements: [
 towerpoint/270
 ]

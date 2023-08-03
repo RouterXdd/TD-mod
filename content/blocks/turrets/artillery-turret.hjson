@@ -8,7 +8,7 @@ size: 2
 reload: 80
 inaccuracy: 0
 consumes:{
-    power: 0.07
+    power: 0.08
 }
 range: 345
 shootType:{
@@ -22,11 +22,24 @@ ammoMultiplier: 1
 reloadMultiplier: 1
 splashDamageRadius: 30
 splashDamage: 10
-width: 6
+width: 10
 height: 10
 }
+drawer: {
+    type: DrawTurret
+    basePrefix: "defence-"
+    }
 category: turret
-research: basic-turret
+research: {
+parent: basic-turret
+objectives: [
+    {
+      type: SectorComplete
+      preset: one-line
+    }
+  ]
+}
+researchCostMultiplier: 0.3
 requirements: [
 towerpoint/140
 ]

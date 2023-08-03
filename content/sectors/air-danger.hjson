@@ -1,0 +1,13 @@
+sector: 19
+planet: simulation
+difficulty: 5
+captureWave: 25
+research: {
+parent: double-trouble
+objectives: [
+    {
+      type: SectorComplete
+      preset: double-trouble
+    }
+  ]
+}

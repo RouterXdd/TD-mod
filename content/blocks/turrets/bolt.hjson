@@ -1,0 +1,52 @@
+type: PowerTurret
+name: "Bolt"
+description: "Shoots the ston bolts"
+targetAir: false
+targetGround: true
+health: 780
+size: 2
+reload: 300
+inaccuracy: 0
+consumes:{
+    power: 0.1
+    }
+range: 240
+shootType:{
+type: BasicBulletType
+speed: 10
+lifetime: 24
+damage: 90
+status: unmoving
+statusDuration: 30
+ammoMultiplier: 1
+reloadMultiplier: 1
+width: 5
+height: 11
+}
+shootEffect:{
+    type: WaveEffect
+    lifetime: 100
+        sizeFrom: 0
+        sizeTo: 10
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 000000ff
+        colorTo: 000000ff
+}
+drawer: {
+    type: DrawTurret
+    basePrefix: "defence-"
+    }
+category: turret
+research: {
+parent: fire-cannon
+objectives: [
+    {
+      type: SectorComplete
+      preset: flame-comb
+    }
+  ]
+}
+requirements: [
+towerpoint/470
+]

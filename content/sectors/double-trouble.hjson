@@ -1,0 +1,13 @@
+sector: 13
+planet: simulation
+difficulty: 3
+captureWave: 20
+research: {
+parent: one-line
+objectives: [
+    {
+      type: SectorComplete
+      preset: one-line
+    }
+  ]
+}

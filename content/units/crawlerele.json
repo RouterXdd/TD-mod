@@ -1,10 +1,9 @@
 {
 "name": "Electro Crawler",
 "research": {
-"parent": "dagger",
+"parent": "unit-factory",
 "requirements": [
-"unitpoint/100",
-"silicon/200"
+"unitpoint/160"
 ]
 },
 "controller": "SuicideAI",
@@ -39,6 +38,7 @@
     "hitEffect": "pulverize",
     "lifetime": 10,
     "speed": 1,
+    "shootOnDeath": true,
     "splashDamageRadius": 45,
     "instantDisappear": true,
     "splashDamage": 100,

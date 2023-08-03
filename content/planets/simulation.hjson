@@ -1,0 +1,77 @@
+mesh: {
+  type: NoiseMesh
+  planet: simulation
+  seed: 69
+  divisions: 4
+  color1: c1c3d4
+  color2: f4f4f4
+  colorScale: 5
+  radius: 0.77
+  octaves: 4
+  persistence: 1
+  scale: 1
+  mag: 1.3
+}
+cloudMesh: {
+        type: HexSkyMesh
+        planet: simulation
+        seed: 4
+        speed: 1
+        radius: 0.10
+        divisions: 5
+        color: bcbc00
+        octaves: 3
+        persistence: 2
+        scl: 2
+        thresh: 0.38
+        }
+sectorSize: 2
+generator: {
+        defeaultLoadout: basicShard
+}
+orbitSpacing: 18
+orbitRadius: 55
+raradius: 0.77
+minZoom: 1
+maxZoom: 4
+drawOrbit: true
+atmosphereRadIn: 0
+atmosphereRadOut: 0.35
+accessible: true
+updateLighting: false
+sectorSeed: 19
+startSector: 8
+bloom: false
+visible: true
+atmosphereColor: c1c3d4
+iconColor: e5e500
+hasAtmosphere: true
+allowSectorInvasion: false
+allowWaveSimulation: true
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowWaves: true
+defaultCore: core-shard
+landCloudColor: e5e500
+parent: sun
+alwaysUnlocked: true
+hiddenItems: [
+        "scrap",
+        "titanium",
+        "thorium",
+        "silicon",
+        "plastanium",
+        "phase-fabric",
+        "surge-alloy",
+        "spore-pod",
+        "sand",
+        "blast-compound",
+        "pyratite",
+        "metaglass",
+        "beryllium",
+        "oxide",
+        "tungsten",
+        "carbide",
+        "fissile-matter",
+        "dormant-cyst"
+]
